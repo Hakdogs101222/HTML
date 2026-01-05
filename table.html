@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Class Schedule</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #1b3c59;
+            letter-spacing: 1px;
+        }
+
+
+        table {
+            width: 85%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #e0e6ed;
+            font-size: 15px;
+        }
+
+
+        thead th {
+            background: linear-gradient(90deg, #1c89aa, #2b5797);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+
+        tbody tr:nth-child(even) {
+            background-color: #f7fbfd;
+        }
+
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+
+        /* Highlight recess row */
+        .break-row td {
+            background-color: #ffe8b2;
+            font-weight: bold;
+            color: #7a4e00;
+        }
+
+
+        /* First column styling */
+        tbody td:first-child {
+            background: #eaf3f8;
+            font-weight: 600;
+            color: #1b3c59;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>Grade 10 Class Schedule</h1>
+
+
+    <table aria-label="Grade 10 Class Schedule">
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>7:30–8:20</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Science</td>
+            </tr>
+
+
+            <tr>
+                <td>8:20–9:10</td>
+                <td>Araling Panlipunan</td>
+                <td>TLE</td>
+                <td>Filipino</td>
+            </tr>
+
+
+            <tr class="break-row">
+                <td>9:10–9:30</td>
+                <td colspan="3">RECESS / BREAK TIME</td>
+            </tr>
+
+
+            <tr>
+                <td>9:30–10:20</td>
+                <td>MAPEH</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+
+
+            <tr>
+                <td>10:20–11:10</td>
+                <td>Filipino</td>
+                <td>English</td>
+                <td>TLE</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
